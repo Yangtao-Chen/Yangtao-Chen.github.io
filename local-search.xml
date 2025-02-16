@@ -8,7 +8,7 @@
     <link href="/2025/02/16/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
     <url>/2025/02/16/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
     
-    <content type="html"><![CDATA[<h2 id="1-一个页面的生成"><a href="#1-一个页面的生成" class="headerlink" title="1. 一个页面的生成"></a>1. 一个页面的生成</h2><p>hexo new page “pageName”</p><p>hexo g -d</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="1-一个页面的生成"><a href="#1-一个页面的生成" class="headerlink" title="1. 一个页面的生成"></a>1. 一个页面的生成</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new page <span class="hljs-string">&quot;pageName&quot;</span><br></code></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo g -d<br></code></pre></td></tr></table></figure><p>刷新页面</p>]]></content>
     
     
     <categories>
