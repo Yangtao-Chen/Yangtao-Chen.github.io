@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>常见问题</title>
+    <link href="/2025/02/16/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    <url>/2025/02/16/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-一个页面的生成"><a href="#1-一个页面的生成" class="headerlink" title="1. 一个页面的生成"></a>1. 一个页面的生成</h2><p>hexo new page “pageName”</p><p>hexo g -d</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>日常</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>原创</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>测试文章</title>
     <link href="/2025/02/16/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
     <url>/2025/02/16/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
