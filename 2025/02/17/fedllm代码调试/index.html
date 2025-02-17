@@ -19,22 +19,22 @@
   <meta name="author" content="杨桃不是桃">
   <meta name="keywords" content="">
   
-    <meta name="description" content="页面的生成123456789hexo new &quot;pageName&quot; #新建文章hexo new page &quot;pageName&quot; #新建页面hexo g #生成hexo d #部署hexo g -d #生成并部署hexo s #本地预览hexo clean #清除缓存和生成文件hexo help #查看帮助  发布文章的动作 123hexo new &amp;quot">
+    <meta name="description" content="OpenFedLLM: Training Large Language Models on Decentralized Private Data via Federated Learning https:&#x2F;&#x2F;github.com&#x2F;rui-ye&#x2F;OpenFedLLM  运行指令  12345678910 CUDA_VISIBLE_DEVICES&#x3D;1 python main_sft.py  --mod">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常见问题">
-<meta property="og:url" content="http://example.com/2025/02/16/%E6%96%87%E7%AB%A0%E6%9B%B4%E6%96%B0/index.html">
+<meta property="og:title" content="fedllm代码调试">
+<meta property="og:url" content="http://example.com/2025/02/17/fedllm%E4%BB%A3%E7%A0%81%E8%B0%83%E8%AF%95/index.html">
 <meta property="og:site_name" content="杨桃不是桃">
-<meta property="og:description" content="页面的生成123456789hexo new &quot;pageName&quot; #新建文章hexo new page &quot;pageName&quot; #新建页面hexo g #生成hexo d #部署hexo g -d #生成并部署hexo s #本地预览hexo clean #清除缓存和生成文件hexo help #查看帮助  发布文章的动作 123hexo new &amp;quot">
+<meta property="og:description" content="OpenFedLLM: Training Large Language Models on Decentralized Private Data via Federated Learning https:&#x2F;&#x2F;github.com&#x2F;rui-ye&#x2F;OpenFedLLM  运行指令  12345678910 CUDA_VISIBLE_DEVICES&#x3D;1 python main_sft.py  --mod">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-02-16T03:55:50.000Z">
-<meta property="article:modified_time" content="2025-02-16T05:49:43.349Z">
+<meta property="article:published_time" content="2025-02-17T03:56:57.000Z">
+<meta property="article:modified_time" content="2025-02-17T04:02:02.644Z">
 <meta property="article:author" content="杨桃不是桃">
-<meta property="article:tag" content="原创">
+<meta property="article:tag" content="论文代码调试">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>常见问题 - 杨桃不是桃</title>
+  <title>fedllm代码调试 - 杨桃不是桃</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -220,7 +220,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="常见问题"></span>
+            <span id="subtitle" data-typed-text="fedllm代码调试"></span>
           
         </div>
 
@@ -231,8 +231,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-02-16 11:55" pubdate>
-          2025年2月16日 中午
+        <time datetime="2025-02-17 11:56" pubdate>
+          2025年2月17日 中午
         </time>
       </span>
     
@@ -243,7 +243,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          133 字
+          124 字
         
       </span>
     
@@ -300,22 +300,18 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">常见问题</h1>
+            <h1 id="seo-header">fedllm代码调试</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="页面的生成"><a href="#页面的生成" class="headerlink" title="页面的生成"></a>页面的生成</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new <span class="hljs-string">&quot;pageName&quot;</span> <span class="hljs-comment">#新建文章</span><br>hexo new page <span class="hljs-string">&quot;pageName&quot;</span> <span class="hljs-comment">#新建页面</span><br>hexo g <span class="hljs-comment">#生成</span><br>hexo d <span class="hljs-comment">#部署</span><br>hexo g -d <span class="hljs-comment">#生成并部署</span><br>hexo s <span class="hljs-comment">#本地预览</span><br>hexo clean <span class="hljs-comment">#清除缓存和生成文件</span><br>hexo <span class="hljs-built_in">help</span> <span class="hljs-comment">#查看帮助</span><br><br></code></pre></td></tr></table></figure>
-
-<p>发布文章的动作</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new <span class="hljs-string">&quot;pageName&quot;</span> <span class="hljs-comment">#新建文章</span><br>hexo clean <span class="hljs-comment">#清除缓存和生成文件</span><br>hexo g -d <span class="hljs-comment">#生成并部署</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="感谢大佬的教程"><a href="#感谢大佬的教程" class="headerlink" title="感谢大佬的教程"></a>感谢大佬的教程</h2><ol>
-<li><p>搭建网站<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/yaorongke/article/details/119089190">https://blog.csdn.net/yaorongke/article/details/119089190</a></p>
-</li>
-<li><p>fluid主题美化<br><a target="_blank" rel="noopener" href="https://mrna16.github.io/2024/11/14/%E3%80%90Hexo%E3%80%91Fluid%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/">https://mrna16.github.io/2024/11/14/%E3%80%90Hexo%E3%80%91Fluid%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</a></p>
-</li>
+                <p>OpenFedLLM: Training Large Language Models on Decentralized Private Data via Federated Learning</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/rui-ye/OpenFedLLM">https://github.com/rui-ye/OpenFedLLM</a></p>
+<ol>
+<li>运行指令</li>
 </ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash"> CUDA_VISIBLE_DEVICES=1 python main_sft.py  --model_name_or_path <span class="hljs-string">&quot;dataroot/models/NousResearch/Llama-2-7b-hf&quot;</span>  --dataset_name <span class="hljs-string">&quot;lucasmccabe-lmi/CodeAlpaca-20k&quot;</span>  --dataset_sample 20000  --fed_alg <span class="hljs-string">&quot;fedavg&quot;</span>  --num_clients 20  --sample_clients 2  --max_steps 10  --num_rounds 200  --batch_size 16  --gradient_accumulation_steps 1  --seq_length 512  --peft_lora_r 32  --peft_lora_alpha 64  --use_peft  --load_in_8bit  --output_dir <span class="hljs-string">&quot;./output&quot;</span>  --template <span class="hljs-string">&quot;alpaca&quot;</span> <br><br> 这里修改了--model_name_or_path <span class="hljs-string">&quot;dataroot/models/NousResearch/Llama-2-7b-hf&quot;</span><br> 修改了--dataset_name <span class="hljs-string">&quot;lucasmccabe-lmi/CodeAlpaca-20k&quot;</span><br> 这两个是已下载的模型和数据集<br><br> 同时因为是已有的数据集，所以要修改代码utils/process_dataset.py<br> <span class="hljs-comment"># dataset = load_dataset(dataset_name, split=&quot;train&quot;)</span><br>dataset = load_from_disk(dataset_name)<br><br></code></pre></td></tr></table></figure>
+
 
                 
               </div>
@@ -334,8 +330,15 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%97%A5%E5%B8%B8/" class="category-chain-item">日常</a>
+  <a href="/categories/%E8%81%94%E9%82%A6%E5%AD%A6%E4%B9%A0/" class="category-chain-item">联邦学习</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/%E8%81%94%E9%82%A6%E5%AD%A6%E4%B9%A0/%E5%A4%A7%E6%A8%A1%E5%9E%8B/" class="category-chain-item">大模型</a>
+  
+  
+
   
 
       </span>
@@ -349,7 +352,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%8E%9F%E5%88%9B/" class="print-no-link">#原创</a>
+        <a href="/tags/%E8%AE%BA%E6%96%87%E4%BB%A3%E7%A0%81%E8%B0%83%E8%AF%95/" class="print-no-link">#论文代码调试</a>
       
     </div>
   
@@ -361,8 +364,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>常见问题</div>
-      <div>http://example.com/2025/02/16/文章更新/</div>
+      <div>fedllm代码调试</div>
+      <div>http://example.com/2025/02/17/fedllm代码调试/</div>
     </div>
     <div class="license-meta">
       
@@ -374,7 +377,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年2月16日</div>
+          <div>2025年2月17日</div>
         </div>
       
       
@@ -406,15 +409,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/02/17/fedllm%E4%BB%A3%E7%A0%81%E8%B0%83%E8%AF%95/" title="fedllm代码调试">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">fedllm代码调试</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2025/02/16/%E6%96%87%E7%AB%A0%E6%9B%B4%E6%96%B0/" title="常见问题">
+                        <span class="hidden-mobile">常见问题</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>

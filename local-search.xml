@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>fedllm代码调试</title>
+    <link href="/2025/02/17/fedllm%E4%BB%A3%E7%A0%81%E8%B0%83%E8%AF%95/"/>
+    <url>/2025/02/17/fedllm%E4%BB%A3%E7%A0%81%E8%B0%83%E8%AF%95/</url>
+    
+    <content type="html"><![CDATA[<p>OpenFedLLM: Training Large Language Models on Decentralized Private Data via Federated Learning</p><p><a href="https://github.com/rui-ye/OpenFedLLM">https://github.com/rui-ye/OpenFedLLM</a></p><ol><li>运行指令</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash"> CUDA_VISIBLE_DEVICES=1 python main_sft.py  --model_name_or_path <span class="hljs-string">&quot;dataroot/models/NousResearch/Llama-2-7b-hf&quot;</span>  --dataset_name <span class="hljs-string">&quot;lucasmccabe-lmi/CodeAlpaca-20k&quot;</span>  --dataset_sample 20000  --fed_alg <span class="hljs-string">&quot;fedavg&quot;</span>  --num_clients 20  --sample_clients 2  --max_steps 10  --num_rounds 200  --batch_size 16  --gradient_accumulation_steps 1  --seq_length 512  --peft_lora_r 32  --peft_lora_alpha 64  --use_peft  --load_in_8bit  --output_dir <span class="hljs-string">&quot;./output&quot;</span>  --template <span class="hljs-string">&quot;alpaca&quot;</span> <br><br> 这里修改了--model_name_or_path <span class="hljs-string">&quot;dataroot/models/NousResearch/Llama-2-7b-hf&quot;</span><br> 修改了--dataset_name <span class="hljs-string">&quot;lucasmccabe-lmi/CodeAlpaca-20k&quot;</span><br> 这两个是已下载的模型和数据集<br><br> 同时因为是已有的数据集，所以要修改代码utils/process_dataset.py<br> <span class="hljs-comment"># dataset = load_dataset(dataset_name, split=&quot;train&quot;)</span><br>dataset = load_from_disk(dataset_name)<br><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>联邦学习</category>
+      
+      <category>大模型</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>论文代码调试</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>常见问题</title>
     <link href="/2025/02/16/%E6%96%87%E7%AB%A0%E6%9B%B4%E6%96%B0/"/>
     <url>/2025/02/16/%E6%96%87%E7%AB%A0%E6%9B%B4%E6%96%B0/</url>
