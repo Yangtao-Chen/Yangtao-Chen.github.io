@@ -6,7 +6,7 @@ document.addEventListener('visibilitychange', function () {
 
  if (document.hidden) {
 
- document.title  =  '(ง •̀_•́)ง‼这里是mRNA的Blog~';
+ document.title  =  '(ง •̀_•́)ง‼这里是杨桃非桃的Blog~';
 
  clearTimeout(titleTime);
 
